@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "uno_icp_backend": {
+      "candid": "src/uno_icp_backend/uno_icp_backend.did",
+      "package": "uno_icp_backend",
+      "type": "rust"
+    },
+    "uno_icp_frontend": {
+      "dependencies": [
+        "uno_icp_backend"
+      ],
+      "source": [
+        "src/uno_icp_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "uno_icp_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
